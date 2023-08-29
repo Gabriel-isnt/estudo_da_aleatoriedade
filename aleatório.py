@@ -54,15 +54,17 @@ def tratar_num():
 
 
 # código principal
-print('escolha o intervalo para a geração do número')
+def principal():    
+    print('escolha o intervalo para a geração do número')
+    
+    print('menor valor para ele')
+    escolha_min = tratar_num()
+    
+    print('maior valor para ele')
+    escolha_max = tratar_num()
+    
+    resultado = gerar_aleatorio(escolha_min ,escolha_max)
 
-print('menor valor para ele')
-escolha_min = tratar_num()
+    print(resultado)
 
-print('maior valor para ele')
-escolha_max = tratar_num()
-
-
-resultado = gerar_aleatorio(escolha_min ,escolha_max)
-
-print(resultado)
+principal()
